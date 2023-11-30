@@ -9,7 +9,7 @@ if(substr_count($x,'.')=='2')$ip=$x.'.'.$x2;else $ip=$x.'.'.$x1.'.'.$x2;
 return $ip;
 }*/
 
-$cou=count(explode("\n",file_get_contents('ip.txt')));
+#$cou=count(explode("\n",file_get_contents('ip.txt')));
 Echo "Total Ip = $cou<Hr>";
 for($i=0; $i<=9999; $i++){
     #for($i=0; $i<=3; $i++){
@@ -34,11 +34,11 @@ $json=json_decode($one,1);
 	$code=$json['country_code'];
 	$postal=$json['postal_code'];
 	$tz=$json['time_zone'];
-if($city == true) {	
+/*if($city == true) {	
 $file=fopen("ip.txt",'a');
 fwrite($file,"$ip\n");
 fclose($file);
-}
+}*/
 #header('Refresh:1');
 
 echo"
